@@ -82,12 +82,12 @@ DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos` (
   `idProducto` mediumint  primary key auto_increment NOT NULL,
   `prdNombre` varchar(75) NOT NULL,
-  `prdPrecio` double(8,2) NOT NULL,
+  `prdPrecio` double(9,2) NOT NULL,
   `idMarca` tinyint NOT NULL,
   `idCategoria` tinyint NOT NULL,
   `prdDescripcion` text NOT NULL,
   `prdImagen` varchar(45) NOT NULL,
-  `prdActivo` tinyint(1) NOT NULL
+  `prdActivo` tinyint(1) NOT NULL DEFAULT(1)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
