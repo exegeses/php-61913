@@ -23,3 +23,8 @@
             return false;
         }
     }
+
+    function agregarProducto()
+    {
+
+    }
