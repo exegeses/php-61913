@@ -8,7 +8,7 @@
 ?>
 
     <main class="container py-4">
-        <h1>Contenido de la sección</h1>
+        <h1>Alta de una marca</h1>
 <?php
         $css = 'danger';
         $mensaje = 'No se pudo agregar la marca';
