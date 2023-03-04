@@ -73,7 +73,35 @@
             return false;
         }
     }
-    function eliminarMarca()
+    function checkProductoXMarca( int $idMarca ) : int
     {
+        $link = conectar();
+        $sql = "SELECT 1 FROM productos
+                    WHERE idMarca = ".$idMarca;
+        try {
+            $resultado = mysqli_query( $link, $sql );
+            $cantidad = mysqli_num_rows($resultado);
+        }
+        catch ( Exception $e ){
+            /* log de errores */
+            echo $e->getMessage();
+            $cantidad = 0;
+        }
+        return $cantidad;
+    }
 
+    function eliminarMarca( int $idMarca ) : bool
+    {
+        $link = conectar();
+        $sql = "DELETE FROM marcas
+                    WHERE idMarca = ".$idMarca;
+        try {
+            $resultado = mysqli_query($link, $sql);
+            return $resultado;
+        }
+        catch ( Exception $e ){
+            /* log de errores */
+            echo $e->getMessage();
+            return false;
+        }
     }
