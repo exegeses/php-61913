@@ -1,0 +1,13 @@
+08/03/2023 23:39:01
+mensaje: Table 'catalogo61913.marcasx' doesn't exist
+----------------------
+08/03/2023 23:41:13
+Archivo: /Users/marcos/Documents/Cursos/PHP-y-MySQL/php-61913/catalogo/funciones/marcas.php
+Nro Línea: 9
+Mensaje: Table 'catalogo61913.marcasx' doesn't exist
+----------------------
+08/03/2023 23:49:21
+Archivo: /Users/marcos/Documents/Cursos/PHP-y-MySQL/php-61913/catalogo/funciones/marcas.php
+Nro Línea: 9
+Mensaje: Table 'catalogo61913.marcasx' doesn't exist
+----------------------
